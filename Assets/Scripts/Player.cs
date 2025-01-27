@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private Animator animator;
+    private bool isHopping;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
+   private void Update()
+   {
+    if(Input.GetKeyDown(KeyCode.W) && !isHopping)
+    {
+        animator.SetTrigger("hop");
+        isHopping = true;
+    }
+   }
+   public void FinishHop()
+   {
+    isHopping = false;
+   }
 }
