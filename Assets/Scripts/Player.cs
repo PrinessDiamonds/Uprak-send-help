@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
     {
         animator.SetTrigger("hop");
         isHopping = true;
-        int newZ = 0;
+        float zDifference = 0;
         if(transform.position.z % 1 != 0)
         {
-            newZ = Mathf.RoundToInt(transform.position.z + 1);
+            zDifference = Mathf.RoundToInt(transform.position.z) - transform.position.z;
         }
-    transform.position = (transform.position + new Vector3(1, 0, newZ));
+    transform.position = (transform.position + new Vector3(1, 0, zDifference));
    }
    }
    public void FinishHop()
