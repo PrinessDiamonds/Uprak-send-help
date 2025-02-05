@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1858088505349017889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5222162526936869953}
+  - component: {fileID: 4213703197238068044}
+  m_Layer: 0
+  m_Name: Terrain Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5222162526936869953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858088505349017889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.17960878, y: 0.56423134, z: -0.12735829, w: 0.79571575}
+  m_LocalPosition: {x: -15.347643, y: 21.061846, z: -25.37737}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4213703197238068044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858088505349017889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaedb7be81c4484694d972bc42e6aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistanceFromPlayer: 15
+  maxTerrainCount: 30
+  terrainDatas:
+  - {fileID: 11400000, guid: 911c5a623f593fa45a6f15daaa2052d9, type: 2}
+  - {fileID: 11400000, guid: baa520fbc867a834b87cd946e5abe0fe, type: 2}
+  - {fileID: 11400000, guid: 57bc4674afe81494a9b10714290b4af2, type: 2}
+  terrainHolder: {fileID: 0}
+  currentPosition: {x: 0, y: 0, z: 0}
