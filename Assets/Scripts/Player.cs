@@ -21,11 +21,24 @@ public class Player : MonoBehaviour
         float zDifference = 0;
         if(transform.position.z % 1 != 0)
         {
-            zDifference = Mathf.RoundToInt(transform.position.z) - transform.position.z;
+            zDifference = Mathf.Round(transform.position.z) - transform.position.z;
         }
     transform.position = (transform.position + new Vector3(1, 0, zDifference));
    }
+   else if (Input.GetKeyDown(KeyCode.A) && !isHopping)
+   {
+    animator.SetTrigger("hop");
+    isHopping = true;
+    transform.position = (transform.position + new Vector3(0, 0, 1));
    }
+   else if (Input.GetKeyDown(KeyCode.D) && !isHopping)
+   {
+    animator.SetTrigger("hop");
+    isHopping = true;
+    transform.position = (transform.position + new Vector3(0, 0, -1));
+   }
+   }
+   
    public void FinishHop()
    {
     isHopping = false;
