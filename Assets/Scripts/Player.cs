@@ -1,20 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private TerrainGenerator terrainGenerator;
+    [SerializeField] private TMP_Text scoreText;
+   
     private Animator animator;
     private bool isHopping;
+    private int score;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
 
+    private void FixedUpdate()
+    {
+        score++;
+    }
+
    private void Update()
    {
+    scoreText.text = "Score: " + score; 
     if(Input.GetKeyDown(KeyCode.W) && !isHopping)
     {
         float zDifference = 0;
