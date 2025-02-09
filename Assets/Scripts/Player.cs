@@ -43,6 +43,10 @@ public class Player : MonoBehaviour
    {
         MoveCharacter(new Vector3(0, 0, -1));
    }
+   else if (Input.GetKeyDown(KeyCode.S) && !isHopping)
+   {
+        MoveCharacter(new Vector3(-1, 0, 0));
+   }
    }
 
    private void OnCollisionEnter(Collision collision)
