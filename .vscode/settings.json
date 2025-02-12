@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Uprak-send-help.sln"
+    "dotnet.defaultSolution": "Uprak send help.sln"
 }
