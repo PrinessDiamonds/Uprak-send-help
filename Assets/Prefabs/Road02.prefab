@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1761197938596519078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 0.44}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -153,8 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dde24229602adb43a63b3f413aeec61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject: {fileID: 3157419418801803723, guid: 9c7de0f962bfd0c4aba4caea80c45c64, type: 3}
+  spawnObject: {fileID: 7141635424393841423, guid: 9da5703989ec4a04395b934db71c6077, type: 3}
   spawnPos: {fileID: 231153126008515188}
   minSeperationTime: 3
   maxSeperationTime: 5
   isRightSide: 0
+  isCar: 1
+  isLog: 0

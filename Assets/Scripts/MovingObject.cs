@@ -7,10 +7,19 @@ public class MovingObject : MonoBehaviour
 {
     [SerializeField] private float speed;
     public bool isLog;
+    public bool isCar;
 
 
     private void Update()
     {
-       transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (isCar)
+        {
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
+        }
+
+        if (isLog)
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
     }
 }
